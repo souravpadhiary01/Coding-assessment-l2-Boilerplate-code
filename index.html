@@ -1,22 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
+    <title>Responsive Navbar with Icons</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kTc27e7gGR/BPUr26OxF2uG5F5vhTAs18uHTTewaaIjtLLjTkgCXcKcKbHR3FD1sKg+F4NYPA1ePw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
 </head>
-
 <body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
-    </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
-</body>
 
+<header>
+    <div class="nav-bar">
+        <div class="logo">
+        
+            <img src="logo.png" alt="Logo" class="logo-img">
+        </div>
+        
+        
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        
+        <div class="nav-icons">
+            <a href="#"><i class="bi bi-search"></i></i></a>
+            <a href="#"><i class="bi bi-suit-heart"></i></i></a>
+            <a href="#"><i class="bi bi-cart-dash"></i></i></a>
+            
+        </div>
+    </div>
+</header>
+
+    
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Cart</h1>
+        </div>
+        <div class="breadcrumb">
+            <a href="#">Home</a> / <a href="#">Cart</a>
+        </div>
+    </section>
+
+    
+    <main>
+        
+        <section class="cart-items">
+            <h2>Your Cart</h2>
+            <div id="cart-container">
+            </div>
+        </section>
+        <section class="cart-totals">
+            <h2>Cart Totals</h2>
+            <div class="totals">
+                <p>Subtotal: <span id="subtotal">₹0</span></p>
+                <p>Total: <span id="total">₹0</span></p>
+            </div>
+            <button class="checkout-btn">Check Out</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-services">
+            <p>High Quality | Warranty Protection | Secure Payments</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
 </html>
